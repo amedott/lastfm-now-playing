@@ -1,97 +1,39 @@
-@font-face {
-    font-family: ArimoFont;
-    src: url(/fonts/Arimo-Regular.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-@font-face {
-    font-family: ArimoFont;
-    src: url(/fonts/Arimo-Bold.ttf);
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: ArimoFont;
-    src: url(/fonts/Arimo-Italic.ttf);
-    font-style: italic;
-}
-
-@font-face {
-    font-family: ArimoFont;
-    src: url(/fonts/Arimo-BoldItalic.ttf);
-    font-weight: bold;
-    font-style: italic;
-}
-
-html {
-    font-family: ArimoFont;
-    font-size: 13px;
-    color: white;
-}
-
-table {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.refresh {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-}
-
-td {
-    vertical-align: middle;
-}
-
-td#cover {
-	padding-right: 5px;
-}
-
-td#date {
-	font-style: italic;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-a#track {
-    font-weight: bold;
-}
-
-a:hover {
-    color: #6DDAB9;
-}
-
-body {
+html, body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    font-family: 'Poppins', sans-serif;
     overflow: hidden;
+    background-color: transparent;
 }
 
-#track {
-    display: flex;
-    align-items: center;
+body, a, table, td {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: white;
+}
+
+table {
     width: 100%;
     height: 100%;
-    box-sizing: border-box;
+    border-collapse: collapse;
 }
 
-img#art {
-    height: 100%;
-    width: auto;
-    aspect-ratio: 1/1;
+td#cover {
+    width: 150px;
+    padding-right: 15px;
+    vertical-align: middle;
+}
+
+img {
+    height: 150px;
+    width: 150px;
     object-fit: cover;
-    margin-right: 15px;
+    display: block;
+    border-radius: 4px;
 }
 
-#info {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+td:not(#cover) {
+    vertical-align: middle;
