@@ -1,5 +1,7 @@
 # Last.fm Now Playing
 
+forked from [here](https://github.com/vojislav/lastfm-now-playing) lol
+
 a html widget that shows the currently playing or last played song for a Last.fm user, along with the album art and refresh button
 
 ![widget](widget.png)
